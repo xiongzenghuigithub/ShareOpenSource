@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-ShareLib-Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ShareLib-NSObject-ObjectMap.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ShareLib-ObjectiveSugar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ShareLib-TMCache.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ShareLib.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>837EE334D84107CB41E93DB5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>898F28C38A18E5DFDA444583</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>92B5B018CBEBE855A54B28D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A07A28C032BAD07A1E87BEFA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4DE5253577269AEE08D6AB4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

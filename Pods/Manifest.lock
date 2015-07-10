@@ -1,0 +1,19 @@
+PODS:
+  - Masonry (0.6.1)
+  - NSObject-ObjectMap (2.3.1)
+  - ObjectiveSugar (1.1.0)
+  - TMCache (2.1.0)
+
+DEPENDENCIES:
+  - Masonry
+  - NSObject-ObjectMap
+  - ObjectiveSugar
+  - TMCache
+
+SPEC CHECKSUMS:
+  Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
+  NSObject-ObjectMap: 3223c0c994a8e3de44ccb74ddf3e63c86821c015
+  ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
+  TMCache: 95ebcc9b3c7e90fb5fd8fc3036cba3aa781c9bed
+
+COCOAPODS: 0.36.0

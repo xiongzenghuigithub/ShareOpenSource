@@ -1,0 +1,982 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00BC83F51E3C7228012715BE /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CC94F5875D3DFA3592750294 /* MASLayoutConstraint.m */; };
+		0186243E6F1309A3DF4E72EF /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 85320BEFF88A0F552B0D87DC /* MASConstraint+Private.h */; };
+		0D24105A57476DEF83D772E0 /* NSSet+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF70BFC6C0722034D9E3D14 /* NSSet+ObjectiveSugar.h */; };
+		0F0D60D2DD3AA7FF915027DA /* ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = E8867242A38AA7006F3D77B3 /* ObjectiveSugar.h */; };
+		119FB327CE0D51A6D58E32CF /* TMDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C330527D65158B75C3A373C7 /* TMDiskCache.h */; };
+		15336F5BFE76B77ACF528EED /* NSDictionary+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3C65BD0690A57EEAC0BE12 /* NSDictionary+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1993C22E3AFA66E8BD617E46 /* Pods-ShareLib-NSObject-ObjectMap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE983453AB35DD34BBD2B690 /* Pods-ShareLib-NSObject-ObjectMap-dummy.m */; };
+		2297CFCFB25C323982C0B5DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F05EF6A06D0140F9D705AB /* Foundation.framework */; };
+		22C42F0AFA6EB311252091A4 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = C5950E8504C55CAB775A8F34 /* Masonry.h */; };
+		28381D02437DF90ED292C8E2 /* TMCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D95A8EDA0916D81DE1C0B1F1 /* TMCache.h */; };
+		285E214B233171E3B3190C6B /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 47FE96DFB3582DF172D2706E /* MASCompositeConstraint.h */; };
+		44E99813FD7DC4DC22A9F882 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F18F46205FA414C3FCFB4FD /* MASUtilities.h */; };
+		469CBA6327FA12837149CE39 /* NSObject+ObjectMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 553417FBEB29E5B0DC03BCC3 /* NSObject+ObjectMap.h */; };
+		4B04395D04C54DFC31E5FD20 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6BB5A1BC7F7AE5EA9DFF0E /* MASCompositeConstraint.m */; };
+		4B5F666B383A452DEC5175BD /* NSSet+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320698D28A91DDD58847AEB /* NSSet+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4CAD35E18D7CB15F4CE368C7 /* TMCacheBackgroundTaskManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DED25140CDC117BC3ECEBB21 /* TMCacheBackgroundTaskManager.h */; };
+		577D8884E98EB05F37ACDAC6 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E6602E1469EEEF901D677031 /* NSArray+MASShorthandAdditions.h */; };
+		57AE4B8E343683BBB4DE0B3D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C7B3EAC15A1763036CDDB8 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		595261AC13D96916DE8F8535 /* NSMutableArray+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB6994123ED9D44EAA8913 /* NSMutableArray+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		62544ED3886FAF7B7BB9620A /* NSNumber+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2757242946D48CC81A6ED2CF /* NSNumber+ObjectiveSugar.h */; };
+		629FDC82FDB3357BC9CB52B5 /* NSArray+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = B630AE9A82E503566F30CCC2 /* NSArray+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		63ADF5CA30F27E82B5ED6A1A /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A45C3657B82A9E5F6029BC /* MASViewConstraint.m */; };
+		6B4E5E1AD1146704BDA963A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA0E2AD3510B000A7E8F672 /* UIKit.framework */; };
+		7A373DFF76F9451F4815196A /* Pods-ShareLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E92C9FB71A747C6934C72 /* Pods-ShareLib-dummy.m */; };
+		7C97756B40AECF1996DB7DD6 /* TMDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C676E65D22496D9D9FEA6FF /* TMDiskCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7D02F0C7EF76622601E70BC2 /* Pods-ShareLib-TMCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B0160977A3BABB5BCC6C6D /* Pods-ShareLib-TMCache-dummy.m */; };
+		8145D28407798F6B96A2E05D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F05EF6A06D0140F9D705AB /* Foundation.framework */; };
+		8AA172C8CD08D1857EF72038 /* NSString+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD9EEEE3106111DF32A26 /* NSString+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8B5FD7BB4F7CC25E8078FFC0 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DA71E8AA9354F9734CFC868F /* NSLayoutConstraint+MASDebugAdditions.h */; };
+		9090B4C378CBAF384BD61B18 /* Pods-ShareLib-ObjectiveSugar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C01EF2C5391F6935D00F71DE /* Pods-ShareLib-ObjectiveSugar-dummy.m */; };
+		9366D55E4FDE0ACD24940778 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3500D0126BDF234E3B4EBF /* MASViewAttribute.m */; };
+		95B562CB88E4A6F5B03E36D5 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFE8035E051F7FEF46FB16B /* NSArray+MASAdditions.h */; };
+		9782DEA5D804F567F497500F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F05EF6A06D0140F9D705AB /* Foundation.framework */; };
+		995A1476BD606D7DA921C2E2 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 74205CE0E35B4688F490D1EA /* MASConstraintMaker.h */; };
+		9D8E51A8D8732FBF615E3653 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F05EF6A06D0140F9D705AB /* Foundation.framework */; };
+		A1F24B44328F7289D7658E48 /* NSDictionary+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A52591F4BC844861F8B925A /* NSDictionary+ObjectiveSugar.h */; };
+		A5E1FAB53CD7B585DFF5ED40 /* NSObject+ObjectMap.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A57155F7B9E2628DC7ED1E /* NSObject+ObjectMap.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A9F1F7AF145E98FC979C41CB /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = CB6C32F726ECE21C0298785A /* MASViewAttribute.h */; };
+		AC5DF28BD50E145F79F30FE0 /* TMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA1B52492C7DC3CD059E2BE /* TMCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AE47FCF6BB5C9C2D12F366DA /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 36C0E20EB6F07D565F1AA571 /* View+MASAdditions.h */; };
+		B0C64F24421FC1A176478FC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F05EF6A06D0140F9D705AB /* Foundation.framework */; };
+		B0DE1D2BD4BBBD120FDEA75B /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A024215E5D199B53F3DF6209 /* MASLayoutConstraint.h */; };
+		B2B32C2F5712B34956FA2837 /* NSMutableArray+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = E0FEEDA4BC41DDA66CEF25AB /* NSMutableArray+ObjectiveSugar.h */; };
+		B576692FC34663B5011923B8 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = D8FF57ED35AD3BEE82CFEF31 /* MASConstraint.h */; };
+		B6A4B200B72A93B0FD493430 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5894A70558501F16889910 /* MASConstraint.m */; };
+		BCC2DF4C45E9AB7670B7619B /* NSNumber+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = EA197981ACB50627AA7E1C00 /* NSNumber+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BE75432314EC5DBEACACD4A2 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C40A7F318B07B099886A7383 /* View+MASShorthandAdditions.h */; };
+		BFC53142C795A31B92CA95A3 /* NSArray+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DB4269E78702000A75D56D3 /* NSArray+ObjectiveSugar.h */; };
+		CE539C567C4B0C5E59EF0183 /* TMMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AE8B168F2204E0FB9B907 /* TMMemoryCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D5DD3D1DB501384E4E34C446 /* NSString+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D3707963CB02A23ED6C78A /* NSString+ObjectiveSugar.h */; };
+		E0A753CB2FE7370919F05B4B /* Pods-ShareLib-Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 561E5A2703BE9EA75CA629C3 /* Pods-ShareLib-Masonry-dummy.m */; };
+		E21DA83CD3BF32AAE2A69CB5 /* TMMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B0DE4054254C164B8BB21F /* TMMemoryCache.h */; };
+		EA77179EFD8A01F8B3088F75 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA48E80F7A3C1CC0C28494F /* View+MASAdditions.m */; };
+		EC2E8F2B80520AA3F7C83E48 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E11EDE443709289ACF6C422 /* MASViewConstraint.h */; };
+		F529C5DBA803227A521F26F9 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F00903FB3DB922A9E53291 /* NSArray+MASAdditions.m */; };
+		F87A2E656111F0D548189ED3 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FDA4A2FA45FB72A25CAFE5 /* MASConstraintMaker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F6945FD4097D2ADDA00B1B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6C6EAE53FEEE225FDF0693F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 898F28C38A18E5DFDA444583;
+			remoteInfo = "Pods-ShareLib-ObjectiveSugar";
+		};
+		72E6E4AA21076C976F099FF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6C6EAE53FEEE225FDF0693F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4DE5253577269AEE08D6AB4;
+			remoteInfo = "Pods-ShareLib-TMCache";
+		};
+		835A71F10488453F39D1F81D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6C6EAE53FEEE225FDF0693F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92B5B018CBEBE855A54B28D0;
+			remoteInfo = "Pods-ShareLib-Masonry";
+		};
+		EA8BFA9FC94511BE9195FF7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6C6EAE53FEEE225FDF0693F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A07A28C032BAD07A1E87BEFA;
+			remoteInfo = "Pods-ShareLib-NSObject-ObjectMap";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0320698D28A91DDD58847AEB /* NSSet+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+ObjectiveSugar.m"; path = "Classes/NSSet+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		0998A933DC5A4D680D0E0A2C /* Pods-ShareLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareLib.release.xcconfig"; sourceTree = "<group>"; };
+		0B7F590F36B4E3EF357F9966 /* Pods-ShareLib-NSObject-ObjectMap.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareLib-NSObject-ObjectMap.xcconfig"; sourceTree = "<group>"; };
+		0D3C65BD0690A57EEAC0BE12 /* NSDictionary+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+ObjectiveSugar.m"; path = "Classes/NSDictionary+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		1041AEA44AA8D7B9209975EF /* Pods-ShareLib-Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareLib-Masonry.xcconfig"; sourceTree = "<group>"; };
+		1798F8B0ADAF3D4332A65E84 /* Pods-ShareLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareLib.debug.xcconfig"; sourceTree = "<group>"; };
+		1F3500D0126BDF234E3B4EBF /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		2054A5E84CDF6BF3F0C1A25F /* Pods-ShareLib-TMCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareLib-TMCache.xcconfig"; sourceTree = "<group>"; };
+		2757242946D48CC81A6ED2CF /* NSNumber+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+ObjectiveSugar.h"; path = "Classes/NSNumber+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		2E93EEFFDDDC7EAD0CB488A4 /* libPods-ShareLib-NSObject-ObjectMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareLib-NSObject-ObjectMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C0E20EB6F07D565F1AA571 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		39DE7EE7B7490CE8A67E1B35 /* Pods-ShareLib-NSObject-ObjectMap-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareLib-NSObject-ObjectMap-Private.xcconfig"; sourceTree = "<group>"; };
+		3C676E65D22496D9D9FEA6FF /* TMDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMDiskCache.m; path = TMCache/TMDiskCache.m; sourceTree = "<group>"; };
+		3CFD2EE34CEB8AB32EBE59DE /* libPods-ShareLib-Masonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareLib-Masonry.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA48E80F7A3C1CC0C28494F /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		3F18F46205FA414C3FCFB4FD /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		43F00903FB3DB922A9E53291 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		45FDA4A2FA45FB72A25CAFE5 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		46AF443B903923717C7A3F5A /* Pods-ShareLib-TMCache-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareLib-TMCache-Private.xcconfig"; sourceTree = "<group>"; };
+		47FE96DFB3582DF172D2706E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		4A52591F4BC844861F8B925A /* NSDictionary+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+ObjectiveSugar.h"; path = "Classes/NSDictionary+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		4E11EDE443709289ACF6C422 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		50CA66931C41E8852927394A /* libPods-ShareLib-TMCache.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareLib-TMCache.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53865F297659CFEEE97765F6 /* Pods-ShareLib-Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShareLib-Masonry-prefix.pch"; sourceTree = "<group>"; };
+		553417FBEB29E5B0DC03BCC3 /* NSObject+ObjectMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+ObjectMap.h"; path = "NSObject-ObjectMap/NSObject+ObjectMap.h"; sourceTree = "<group>"; };
+		561E5A2703BE9EA75CA629C3 /* Pods-ShareLib-Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShareLib-Masonry-dummy.m"; sourceTree = "<group>"; };
+		57D3707963CB02A23ED6C78A /* NSString+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ObjectiveSugar.h"; path = "Classes/NSString+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		5A3995D824A6AD1F50EB649F /* Pods-ShareLib-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShareLib-environment.h"; sourceTree = "<group>"; };
+		5D8AE8B168F2204E0FB9B907 /* TMMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMMemoryCache.m; path = TMCache/TMMemoryCache.m; sourceTree = "<group>"; };
+		5E091BFF3BC05BDEBC4B6844 /* Pods-ShareLib-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShareLib-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5FEB6994123ED9D44EAA8913 /* NSMutableArray+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+ObjectiveSugar.m"; path = "Classes/NSMutableArray+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		6BF70BFC6C0722034D9E3D14 /* NSSet+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+ObjectiveSugar.h"; path = "Classes/NSSet+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		6DA1B52492C7DC3CD059E2BE /* TMCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMCache.m; path = TMCache/TMCache.m; sourceTree = "<group>"; };
+		74205CE0E35B4688F490D1EA /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		75315D5ACAF9F18F65039E38 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		76D35839DBB627D1D2086D3A /* Pods-ShareLib-ObjectiveSugar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShareLib-ObjectiveSugar-prefix.pch"; sourceTree = "<group>"; };
+		79F956C1D0858A985D27D537 /* Pods-ShareLib-ObjectiveSugar-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareLib-ObjectiveSugar-Private.xcconfig"; sourceTree = "<group>"; };
+		7AA0E2AD3510B000A7E8F672 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7E9E92C9FB71A747C6934C72 /* Pods-ShareLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShareLib-dummy.m"; sourceTree = "<group>"; };
+		8271A06152D8C2C3190C3165 /* libPods-ShareLib-ObjectiveSugar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareLib-ObjectiveSugar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85320BEFF88A0F552B0D87DC /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		96DC1700A64BE01D4C2E5886 /* libPods-ShareLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D6AFF1620B082015DC25D44 /* Pods-ShareLib-ObjectiveSugar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareLib-ObjectiveSugar.xcconfig"; sourceTree = "<group>"; };
+		9DB4269E78702000A75D56D3 /* NSArray+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+ObjectiveSugar.h"; path = "Classes/NSArray+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		9FDA8E1F7E48C1A31BE293D5 /* Pods-ShareLib-TMCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShareLib-TMCache-prefix.pch"; sourceTree = "<group>"; };
+		A024215E5D199B53F3DF6209 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		A7A45C3657B82A9E5F6029BC /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		AAFE8035E051F7FEF46FB16B /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		ABF68D1723A353264F5BBB7D /* Pods-ShareLib-Masonry-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareLib-Masonry-Private.xcconfig"; sourceTree = "<group>"; };
+		AE983453AB35DD34BBD2B690 /* Pods-ShareLib-NSObject-ObjectMap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShareLib-NSObject-ObjectMap-dummy.m"; sourceTree = "<group>"; };
+		B2F05EF6A06D0140F9D705AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B4A57155F7B9E2628DC7ED1E /* NSObject+ObjectMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ObjectMap.m"; path = "NSObject-ObjectMap/NSObject+ObjectMap.m"; sourceTree = "<group>"; };
+		B5AF085863B6EDA2A0C9E9C2 /* Pods-ShareLib-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShareLib-acknowledgements.plist"; sourceTree = "<group>"; };
+		B630AE9A82E503566F30CCC2 /* NSArray+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+ObjectiveSugar.m"; path = "Classes/NSArray+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		BD6BB5A1BC7F7AE5EA9DFF0E /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		BE5894A70558501F16889910 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		C01EF2C5391F6935D00F71DE /* Pods-ShareLib-ObjectiveSugar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShareLib-ObjectiveSugar-dummy.m"; sourceTree = "<group>"; };
+		C330527D65158B75C3A373C7 /* TMDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMDiskCache.h; path = TMCache/TMDiskCache.h; sourceTree = "<group>"; };
+		C40A7F318B07B099886A7383 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		C5950E8504C55CAB775A8F34 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		C9B0160977A3BABB5BCC6C6D /* Pods-ShareLib-TMCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShareLib-TMCache-dummy.m"; sourceTree = "<group>"; };
+		CB6C32F726ECE21C0298785A /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		CC94F5875D3DFA3592750294 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		D8FF57ED35AD3BEE82CFEF31 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		D95A8EDA0916D81DE1C0B1F1 /* TMCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMCache.h; path = TMCache/TMCache.h; sourceTree = "<group>"; };
+		DA71E8AA9354F9734CFC868F /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		DCF130D43C1E6561616929E3 /* Pods-ShareLib-NSObject-ObjectMap-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShareLib-NSObject-ObjectMap-prefix.pch"; sourceTree = "<group>"; };
+		DED25140CDC117BC3ECEBB21 /* TMCacheBackgroundTaskManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMCacheBackgroundTaskManager.h; path = TMCache/TMCacheBackgroundTaskManager.h; sourceTree = "<group>"; };
+		E0FEEDA4BC41DDA66CEF25AB /* NSMutableArray+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+ObjectiveSugar.h"; path = "Classes/NSMutableArray+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		E3B0DE4054254C164B8BB21F /* TMMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMMemoryCache.h; path = TMCache/TMMemoryCache.h; sourceTree = "<group>"; };
+		E6602E1469EEEF901D677031 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		E8867242A38AA7006F3D77B3 /* ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectiveSugar.h; path = Classes/ObjectiveSugar.h; sourceTree = "<group>"; };
+		EA197981ACB50627AA7E1C00 /* NSNumber+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+ObjectiveSugar.m"; path = "Classes/NSNumber+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		EFCCD9EEEE3106111DF32A26 /* NSString+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+ObjectiveSugar.m"; path = "Classes/NSString+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		F0DD3183FDC0FE073354B878 /* Pods-ShareLib-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShareLib-resources.sh"; sourceTree = "<group>"; };
+		F6C7B3EAC15A1763036CDDB8 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E2BA6DB2D46FF6821A83D1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9782DEA5D804F567F497500F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FDDBC46FE330EFA35B9374B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C64F24421FC1A176478FC6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2397A16192DD16F14E96105E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8E51A8D8732FBF615E3653 /* Foundation.framework in Frameworks */,
+				6B4E5E1AD1146704BDA963A8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF29D5D83A69B7D8672887F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8145D28407798F6B96A2E05D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AABD88290721C32A7819BF3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2297CFCFB25C323982C0B5DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0574C5145250CC369C922DD5 /* NSObject-ObjectMap */ = {
+			isa = PBXGroup;
+			children = (
+				553417FBEB29E5B0DC03BCC3 /* NSObject+ObjectMap.h */,
+				B4A57155F7B9E2628DC7ED1E /* NSObject+ObjectMap.m */,
+				D4A7B26225FCBBCD630DD506 /* Support Files */,
+			);
+			path = "NSObject-ObjectMap";
+			sourceTree = "<group>";
+		};
+		083637352BE0F9DFEBEE6515 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				47FE96DFB3582DF172D2706E /* MASCompositeConstraint.h */,
+				BD6BB5A1BC7F7AE5EA9DFF0E /* MASCompositeConstraint.m */,
+				D8FF57ED35AD3BEE82CFEF31 /* MASConstraint.h */,
+				BE5894A70558501F16889910 /* MASConstraint.m */,
+				85320BEFF88A0F552B0D87DC /* MASConstraint+Private.h */,
+				74205CE0E35B4688F490D1EA /* MASConstraintMaker.h */,
+				45FDA4A2FA45FB72A25CAFE5 /* MASConstraintMaker.m */,
+				A024215E5D199B53F3DF6209 /* MASLayoutConstraint.h */,
+				CC94F5875D3DFA3592750294 /* MASLayoutConstraint.m */,
+				3F18F46205FA414C3FCFB4FD /* MASUtilities.h */,
+				CB6C32F726ECE21C0298785A /* MASViewAttribute.h */,
+				1F3500D0126BDF234E3B4EBF /* MASViewAttribute.m */,
+				4E11EDE443709289ACF6C422 /* MASViewConstraint.h */,
+				A7A45C3657B82A9E5F6029BC /* MASViewConstraint.m */,
+				C5950E8504C55CAB775A8F34 /* Masonry.h */,
+				AAFE8035E051F7FEF46FB16B /* NSArray+MASAdditions.h */,
+				43F00903FB3DB922A9E53291 /* NSArray+MASAdditions.m */,
+				E6602E1469EEEF901D677031 /* NSArray+MASShorthandAdditions.h */,
+				DA71E8AA9354F9734CFC868F /* NSLayoutConstraint+MASDebugAdditions.h */,
+				F6C7B3EAC15A1763036CDDB8 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				36C0E20EB6F07D565F1AA571 /* View+MASAdditions.h */,
+				3DA48E80F7A3C1CC0C28494F /* View+MASAdditions.m */,
+				C40A7F318B07B099886A7383 /* View+MASShorthandAdditions.h */,
+				087AAF720F6C5D4FE210531A /* Support Files */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		087AAF720F6C5D4FE210531A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1041AEA44AA8D7B9209975EF /* Pods-ShareLib-Masonry.xcconfig */,
+				ABF68D1723A353264F5BBB7D /* Pods-ShareLib-Masonry-Private.xcconfig */,
+				561E5A2703BE9EA75CA629C3 /* Pods-ShareLib-Masonry-dummy.m */,
+				53865F297659CFEEE97765F6 /* Pods-ShareLib-Masonry-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ShareLib-Masonry";
+			sourceTree = "<group>";
+		};
+		2B654948F41E984FC18133DE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A31BAC717B7621B27F03006 /* Pods-ShareLib */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		358FD4252026FCBA13C65B44 = {
+			isa = PBXGroup;
+			children = (
+				75315D5ACAF9F18F65039E38 /* Podfile */,
+				CE544545A3158F3E1349FD42 /* Frameworks */,
+				4CAB319A075C15653A611FE0 /* Pods */,
+				9AF7B7FC01E180DD4CDF57AE /* Products */,
+				2B654948F41E984FC18133DE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		3A31BAC717B7621B27F03006 /* Pods-ShareLib */ = {
+			isa = PBXGroup;
+			children = (
+				5E091BFF3BC05BDEBC4B6844 /* Pods-ShareLib-acknowledgements.markdown */,
+				B5AF085863B6EDA2A0C9E9C2 /* Pods-ShareLib-acknowledgements.plist */,
+				7E9E92C9FB71A747C6934C72 /* Pods-ShareLib-dummy.m */,
+				5A3995D824A6AD1F50EB649F /* Pods-ShareLib-environment.h */,
+				F0DD3183FDC0FE073354B878 /* Pods-ShareLib-resources.sh */,
+				1798F8B0ADAF3D4332A65E84 /* Pods-ShareLib.debug.xcconfig */,
+				0998A933DC5A4D680D0E0A2C /* Pods-ShareLib.release.xcconfig */,
+			);
+			name = "Pods-ShareLib";
+			path = "Target Support Files/Pods-ShareLib";
+			sourceTree = "<group>";
+		};
+		4CAB319A075C15653A611FE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				083637352BE0F9DFEBEE6515 /* Masonry */,
+				0574C5145250CC369C922DD5 /* NSObject-ObjectMap */,
+				A2E6647FC3596CC51E193F82 /* ObjectiveSugar */,
+				FC76A14EF72A5A58D52D7537 /* TMCache */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7734D42B59987598C328F451 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D6AFF1620B082015DC25D44 /* Pods-ShareLib-ObjectiveSugar.xcconfig */,
+				79F956C1D0858A985D27D537 /* Pods-ShareLib-ObjectiveSugar-Private.xcconfig */,
+				C01EF2C5391F6935D00F71DE /* Pods-ShareLib-ObjectiveSugar-dummy.m */,
+				76D35839DBB627D1D2086D3A /* Pods-ShareLib-ObjectiveSugar-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ShareLib-ObjectiveSugar";
+			sourceTree = "<group>";
+		};
+		860FD12C2295539A164C5448 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2054A5E84CDF6BF3F0C1A25F /* Pods-ShareLib-TMCache.xcconfig */,
+				46AF443B903923717C7A3F5A /* Pods-ShareLib-TMCache-Private.xcconfig */,
+				C9B0160977A3BABB5BCC6C6D /* Pods-ShareLib-TMCache-dummy.m */,
+				9FDA8E1F7E48C1A31BE293D5 /* Pods-ShareLib-TMCache-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ShareLib-TMCache";
+			sourceTree = "<group>";
+		};
+		9AF7B7FC01E180DD4CDF57AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96DC1700A64BE01D4C2E5886 /* libPods-ShareLib.a */,
+				3CFD2EE34CEB8AB32EBE59DE /* libPods-ShareLib-Masonry.a */,
+				2E93EEFFDDDC7EAD0CB488A4 /* libPods-ShareLib-NSObject-ObjectMap.a */,
+				8271A06152D8C2C3190C3165 /* libPods-ShareLib-ObjectiveSugar.a */,
+				50CA66931C41E8852927394A /* libPods-ShareLib-TMCache.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2E6647FC3596CC51E193F82 /* ObjectiveSugar */ = {
+			isa = PBXGroup;
+			children = (
+				9DB4269E78702000A75D56D3 /* NSArray+ObjectiveSugar.h */,
+				B630AE9A82E503566F30CCC2 /* NSArray+ObjectiveSugar.m */,
+				4A52591F4BC844861F8B925A /* NSDictionary+ObjectiveSugar.h */,
+				0D3C65BD0690A57EEAC0BE12 /* NSDictionary+ObjectiveSugar.m */,
+				E0FEEDA4BC41DDA66CEF25AB /* NSMutableArray+ObjectiveSugar.h */,
+				5FEB6994123ED9D44EAA8913 /* NSMutableArray+ObjectiveSugar.m */,
+				2757242946D48CC81A6ED2CF /* NSNumber+ObjectiveSugar.h */,
+				EA197981ACB50627AA7E1C00 /* NSNumber+ObjectiveSugar.m */,
+				6BF70BFC6C0722034D9E3D14 /* NSSet+ObjectiveSugar.h */,
+				0320698D28A91DDD58847AEB /* NSSet+ObjectiveSugar.m */,
+				57D3707963CB02A23ED6C78A /* NSString+ObjectiveSugar.h */,
+				EFCCD9EEEE3106111DF32A26 /* NSString+ObjectiveSugar.m */,
+				E8867242A38AA7006F3D77B3 /* ObjectiveSugar.h */,
+				7734D42B59987598C328F451 /* Support Files */,
+			);
+			path = ObjectiveSugar;
+			sourceTree = "<group>";
+		};
+		BD6CBF78C707DFC143963229 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B2F05EF6A06D0140F9D705AB /* Foundation.framework */,
+				7AA0E2AD3510B000A7E8F672 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CE544545A3158F3E1349FD42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD6CBF78C707DFC143963229 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4A7B26225FCBBCD630DD506 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B7F590F36B4E3EF357F9966 /* Pods-ShareLib-NSObject-ObjectMap.xcconfig */,
+				39DE7EE7B7490CE8A67E1B35 /* Pods-ShareLib-NSObject-ObjectMap-Private.xcconfig */,
+				AE983453AB35DD34BBD2B690 /* Pods-ShareLib-NSObject-ObjectMap-dummy.m */,
+				DCF130D43C1E6561616929E3 /* Pods-ShareLib-NSObject-ObjectMap-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ShareLib-NSObject-ObjectMap";
+			sourceTree = "<group>";
+		};
+		FC76A14EF72A5A58D52D7537 /* TMCache */ = {
+			isa = PBXGroup;
+			children = (
+				D95A8EDA0916D81DE1C0B1F1 /* TMCache.h */,
+				6DA1B52492C7DC3CD059E2BE /* TMCache.m */,
+				DED25140CDC117BC3ECEBB21 /* TMCacheBackgroundTaskManager.h */,
+				C330527D65158B75C3A373C7 /* TMDiskCache.h */,
+				3C676E65D22496D9D9FEA6FF /* TMDiskCache.m */,
+				E3B0DE4054254C164B8BB21F /* TMMemoryCache.h */,
+				5D8AE8B168F2204E0FB9B907 /* TMMemoryCache.m */,
+				860FD12C2295539A164C5448 /* Support Files */,
+			);
+			path = TMCache;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		475D339FD85BE6DC9ADC27DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285E214B233171E3B3190C6B /* MASCompositeConstraint.h in Headers */,
+				0186243E6F1309A3DF4E72EF /* MASConstraint+Private.h in Headers */,
+				B576692FC34663B5011923B8 /* MASConstraint.h in Headers */,
+				995A1476BD606D7DA921C2E2 /* MASConstraintMaker.h in Headers */,
+				B0DE1D2BD4BBBD120FDEA75B /* MASLayoutConstraint.h in Headers */,
+				44E99813FD7DC4DC22A9F882 /* MASUtilities.h in Headers */,
+				A9F1F7AF145E98FC979C41CB /* MASViewAttribute.h in Headers */,
+				EC2E8F2B80520AA3F7C83E48 /* MASViewConstraint.h in Headers */,
+				22C42F0AFA6EB311252091A4 /* Masonry.h in Headers */,
+				95B562CB88E4A6F5B03E36D5 /* NSArray+MASAdditions.h in Headers */,
+				577D8884E98EB05F37ACDAC6 /* NSArray+MASShorthandAdditions.h in Headers */,
+				8B5FD7BB4F7CC25E8078FFC0 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				AE47FCF6BB5C9C2D12F366DA /* View+MASAdditions.h in Headers */,
+				BE75432314EC5DBEACACD4A2 /* View+MASShorthandAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5EA648C4C44D4856439E4D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC53142C795A31B92CA95A3 /* NSArray+ObjectiveSugar.h in Headers */,
+				A1F24B44328F7289D7658E48 /* NSDictionary+ObjectiveSugar.h in Headers */,
+				B2B32C2F5712B34956FA2837 /* NSMutableArray+ObjectiveSugar.h in Headers */,
+				62544ED3886FAF7B7BB9620A /* NSNumber+ObjectiveSugar.h in Headers */,
+				0D24105A57476DEF83D772E0 /* NSSet+ObjectiveSugar.h in Headers */,
+				D5DD3D1DB501384E4E34C446 /* NSString+ObjectiveSugar.h in Headers */,
+				0F0D60D2DD3AA7FF915027DA /* ObjectiveSugar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		829B640E48805C7A7AB499DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28381D02437DF90ED292C8E2 /* TMCache.h in Headers */,
+				4CAD35E18D7CB15F4CE368C7 /* TMCacheBackgroundTaskManager.h in Headers */,
+				119FB327CE0D51A6D58E32CF /* TMDiskCache.h in Headers */,
+				E21DA83CD3BF32AAE2A69CB5 /* TMMemoryCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8724B007BB10C32A93EC0B2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469CBA6327FA12837149CE39 /* NSObject+ObjectMap.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		837EE334D84107CB41E93DB5 /* Pods-ShareLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34650A582AE3DFDC62DE5567 /* Build configuration list for PBXNativeTarget "Pods-ShareLib" */;
+			buildPhases = (
+				309C4594DDD4EF6074D6050E /* Sources */,
+				6DF29D5D83A69B7D8672887F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BF3923C0ABD7D681C336195 /* PBXTargetDependency */,
+				BAB618D3D03CB29B726DA5D8 /* PBXTargetDependency */,
+				1084B57EE7A0C939EA4969DE /* PBXTargetDependency */,
+				D4A423DCC7050A12E6F21B6D /* PBXTargetDependency */,
+			);
+			name = "Pods-ShareLib";
+			productName = "Pods-ShareLib";
+			productReference = 96DC1700A64BE01D4C2E5886 /* libPods-ShareLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		898F28C38A18E5DFDA444583 /* Pods-ShareLib-ObjectiveSugar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB07504ACEA2389E92CD47FA /* Build configuration list for PBXNativeTarget "Pods-ShareLib-ObjectiveSugar" */;
+			buildPhases = (
+				E55EB38854ED8B4CF76A339F /* Sources */,
+				1FDDBC46FE330EFA35B9374B /* Frameworks */,
+				4F5EA648C4C44D4856439E4D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ShareLib-ObjectiveSugar";
+			productName = "Pods-ShareLib-ObjectiveSugar";
+			productReference = 8271A06152D8C2C3190C3165 /* libPods-ShareLib-ObjectiveSugar.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		92B5B018CBEBE855A54B28D0 /* Pods-ShareLib-Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B983BB6C2BE7FC349D2B616 /* Build configuration list for PBXNativeTarget "Pods-ShareLib-Masonry" */;
+			buildPhases = (
+				15804F0D16A08F08ED32560A /* Sources */,
+				2397A16192DD16F14E96105E /* Frameworks */,
+				475D339FD85BE6DC9ADC27DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ShareLib-Masonry";
+			productName = "Pods-ShareLib-Masonry";
+			productReference = 3CFD2EE34CEB8AB32EBE59DE /* libPods-ShareLib-Masonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A07A28C032BAD07A1E87BEFA /* Pods-ShareLib-NSObject-ObjectMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FF507D06B0D0FBB3C0ED533 /* Build configuration list for PBXNativeTarget "Pods-ShareLib-NSObject-ObjectMap" */;
+			buildPhases = (
+				A090494A009AE76DEACF6843 /* Sources */,
+				AABD88290721C32A7819BF3F /* Frameworks */,
+				8724B007BB10C32A93EC0B2D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ShareLib-NSObject-ObjectMap";
+			productName = "Pods-ShareLib-NSObject-ObjectMap";
+			productReference = 2E93EEFFDDDC7EAD0CB488A4 /* libPods-ShareLib-NSObject-ObjectMap.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D4DE5253577269AEE08D6AB4 /* Pods-ShareLib-TMCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D754948D15BDFBCD76A3197 /* Build configuration list for PBXNativeTarget "Pods-ShareLib-TMCache" */;
+			buildPhases = (
+				AF4E2A980E62A15E99CCA413 /* Sources */,
+				1E2BA6DB2D46FF6821A83D1F /* Frameworks */,
+				829B640E48805C7A7AB499DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ShareLib-TMCache";
+			productName = "Pods-ShareLib-TMCache";
+			productReference = 50CA66931C41E8852927394A /* libPods-ShareLib-TMCache.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6C6EAE53FEEE225FDF0693F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 15538605F43C6E50B49AF24D /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 358FD4252026FCBA13C65B44;
+			productRefGroup = 9AF7B7FC01E180DD4CDF57AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				837EE334D84107CB41E93DB5 /* Pods-ShareLib */,
+				92B5B018CBEBE855A54B28D0 /* Pods-ShareLib-Masonry */,
+				A07A28C032BAD07A1E87BEFA /* Pods-ShareLib-NSObject-ObjectMap */,
+				898F28C38A18E5DFDA444583 /* Pods-ShareLib-ObjectiveSugar */,
+				D4DE5253577269AEE08D6AB4 /* Pods-ShareLib-TMCache */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15804F0D16A08F08ED32560A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B04395D04C54DFC31E5FD20 /* MASCompositeConstraint.m in Sources */,
+				B6A4B200B72A93B0FD493430 /* MASConstraint.m in Sources */,
+				F87A2E656111F0D548189ED3 /* MASConstraintMaker.m in Sources */,
+				00BC83F51E3C7228012715BE /* MASLayoutConstraint.m in Sources */,
+				9366D55E4FDE0ACD24940778 /* MASViewAttribute.m in Sources */,
+				63ADF5CA30F27E82B5ED6A1A /* MASViewConstraint.m in Sources */,
+				F529C5DBA803227A521F26F9 /* NSArray+MASAdditions.m in Sources */,
+				57AE4B8E343683BBB4DE0B3D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				E0A753CB2FE7370919F05B4B /* Pods-ShareLib-Masonry-dummy.m in Sources */,
+				EA77179EFD8A01F8B3088F75 /* View+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309C4594DDD4EF6074D6050E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A373DFF76F9451F4815196A /* Pods-ShareLib-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A090494A009AE76DEACF6843 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E1FAB53CD7B585DFF5ED40 /* NSObject+ObjectMap.m in Sources */,
+				1993C22E3AFA66E8BD617E46 /* Pods-ShareLib-NSObject-ObjectMap-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4E2A980E62A15E99CCA413 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D02F0C7EF76622601E70BC2 /* Pods-ShareLib-TMCache-dummy.m in Sources */,
+				AC5DF28BD50E145F79F30FE0 /* TMCache.m in Sources */,
+				7C97756B40AECF1996DB7DD6 /* TMDiskCache.m in Sources */,
+				CE539C567C4B0C5E59EF0183 /* TMMemoryCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E55EB38854ED8B4CF76A339F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629FDC82FDB3357BC9CB52B5 /* NSArray+ObjectiveSugar.m in Sources */,
+				15336F5BFE76B77ACF528EED /* NSDictionary+ObjectiveSugar.m in Sources */,
+				595261AC13D96916DE8F8535 /* NSMutableArray+ObjectiveSugar.m in Sources */,
+				BCC2DF4C45E9AB7670B7619B /* NSNumber+ObjectiveSugar.m in Sources */,
+				4B5F666B383A452DEC5175BD /* NSSet+ObjectiveSugar.m in Sources */,
+				8AA172C8CD08D1857EF72038 /* NSString+ObjectiveSugar.m in Sources */,
+				9090B4C378CBAF384BD61B18 /* Pods-ShareLib-ObjectiveSugar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1084B57EE7A0C939EA4969DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ShareLib-ObjectiveSugar";
+			target = 898F28C38A18E5DFDA444583 /* Pods-ShareLib-ObjectiveSugar */;
+			targetProxy = 1F6945FD4097D2ADDA00B1B4 /* PBXContainerItemProxy */;
+		};
+		8BF3923C0ABD7D681C336195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ShareLib-Masonry";
+			target = 92B5B018CBEBE855A54B28D0 /* Pods-ShareLib-Masonry */;
+			targetProxy = 835A71F10488453F39D1F81D /* PBXContainerItemProxy */;
+		};
+		BAB618D3D03CB29B726DA5D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ShareLib-NSObject-ObjectMap";
+			target = A07A28C032BAD07A1E87BEFA /* Pods-ShareLib-NSObject-ObjectMap */;
+			targetProxy = EA8BFA9FC94511BE9195FF7C /* PBXContainerItemProxy */;
+		};
+		D4A423DCC7050A12E6F21B6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ShareLib-TMCache";
+			target = D4DE5253577269AEE08D6AB4 /* Pods-ShareLib-TMCache */;
+			targetProxy = 72E6E4AA21076C976F099FF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		097753306EEDED802BD1F2FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46AF443B903923717C7A3F5A /* Pods-ShareLib-TMCache-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ShareLib-TMCache/Pods-ShareLib-TMCache-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		177479443729995FCA73FF11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39DE7EE7B7490CE8A67E1B35 /* Pods-ShareLib-NSObject-ObjectMap-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ShareLib-NSObject-ObjectMap/Pods-ShareLib-NSObject-ObjectMap-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1B6F9760269E5A0FA4B73647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39DE7EE7B7490CE8A67E1B35 /* Pods-ShareLib-NSObject-ObjectMap-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ShareLib-NSObject-ObjectMap/Pods-ShareLib-NSObject-ObjectMap-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3ABBC42F53B663E2AD7766BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F956C1D0858A985D27D537 /* Pods-ShareLib-ObjectiveSugar-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ShareLib-ObjectiveSugar/Pods-ShareLib-ObjectiveSugar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4644F2422053D850F5F73CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46AF443B903923717C7A3F5A /* Pods-ShareLib-TMCache-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ShareLib-TMCache/Pods-ShareLib-TMCache-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		47B9BDF1B1FE0B397DE4366B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABF68D1723A353264F5BBB7D /* Pods-ShareLib-Masonry-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ShareLib-Masonry/Pods-ShareLib-Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		60E768B143439D5A4566A2F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C8C9E3DAF9D0109C06477BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0998A933DC5A4D680D0E0A2C /* Pods-ShareLib.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AA9A8820A9ABF153EE97C9FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABF68D1723A353264F5BBB7D /* Pods-ShareLib-Masonry-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ShareLib-Masonry/Pods-ShareLib-Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C2169F52B2660436116EEC0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1798F8B0ADAF3D4332A65E84 /* Pods-ShareLib.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C97D153D4B6D101FA870D914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F956C1D0858A985D27D537 /* Pods-ShareLib-ObjectiveSugar-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ShareLib-ObjectiveSugar/Pods-ShareLib-ObjectiveSugar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F246FE4DD0F344C26F6C8128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15538605F43C6E50B49AF24D /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F246FE4DD0F344C26F6C8128 /* Debug */,
+				60E768B143439D5A4566A2F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34650A582AE3DFDC62DE5567 /* Build configuration list for PBXNativeTarget "Pods-ShareLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2169F52B2660436116EEC0E /* Debug */,
+				9C8C9E3DAF9D0109C06477BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D754948D15BDFBCD76A3197 /* Build configuration list for PBXNativeTarget "Pods-ShareLib-TMCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4644F2422053D850F5F73CF1 /* Debug */,
+				097753306EEDED802BD1F2FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B983BB6C2BE7FC349D2B616 /* Build configuration list for PBXNativeTarget "Pods-ShareLib-Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47B9BDF1B1FE0B397DE4366B /* Debug */,
+				AA9A8820A9ABF153EE97C9FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FF507D06B0D0FBB3C0ED533 /* Build configuration list for PBXNativeTarget "Pods-ShareLib-NSObject-ObjectMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177479443729995FCA73FF11 /* Debug */,
+				1B6F9760269E5A0FA4B73647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB07504ACEA2389E92CD47FA /* Build configuration list for PBXNativeTarget "Pods-ShareLib-ObjectiveSugar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C97D153D4B6D101FA870D914 /* Debug */,
+				3ABBC42F53B663E2AD7766BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6C6EAE53FEEE225FDF0693F /* Project object */;
+}
