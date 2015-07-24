@@ -61,6 +61,10 @@ static NSString *CacheName = @"XZHShareLib";
     _shareToWeixin = [[XZHShareToWeixin alloc] init];
     [_shareToWeixin registWithAppIdOrAppKey:@"wxd930ea5d5a258f4f" AppSecret:@""];
     [_platforms addObject:_shareToWeixin];
+    
+    //易信平台初始化
+//    yx88c3c868714e42debfd37f935423db9a
+//    44b3a717e970f457b
 }
 
 

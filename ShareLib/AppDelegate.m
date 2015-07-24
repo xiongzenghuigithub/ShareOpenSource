@@ -53,8 +53,25 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-#pragma mark -
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+#pragma mark - 处理我们的App被其他App掉起
+
+- (BOOL)application:(UIApplication *)application
+      handleOpenURL:(NSURL *)url {
+    
+    //其他应用掉起当前应用时，传回的参数，如果传入的url能够处理
+    if ([[XZHShareManager manager] handleOpenURL:url]) {
+        return YES;
+    }
+    
+    //不能处理的App调起
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
     
     //其他应用掉起当前应用时，传回的参数，如果传入的url能够处理
     if ([[XZHShareManager manager] handleOpenURL:url]) {

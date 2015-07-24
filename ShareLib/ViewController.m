@@ -135,7 +135,7 @@ static NSString *const cellId = @"cellid";
 //        
 //    }];
     
-    //分享图片信息到微信会话
+    //1. 分享图片信息到微信会话
     XZHMessage *message = [[XZHMessage alloc] init];
     message.title = @"分享到微信会话";
     message.desc = @"这是描述.... ";
@@ -143,11 +143,15 @@ static NSString *const cellId = @"cellid";
     message.imageData = UIImageJPEGRepresentation(image, 0.1);
     message.thumbImageData = UIImageJPEGRepresentation(image, 0.1);
     
-    [[XZHShareManager manager] shareMessage:message Platform:XZHShareWeixin Type:XZHShareToWeixinSession OnSuccess:^(XZHMessage *message) {
+    //2. 分享
+    [[XZHShareManager manager] shareMessage:message
+                                   Platform:XZHShareWeixin
+                                       Type:XZHShareToWeixinSession
+                                  OnSuccess:^(XZHMessage *message) {
         
-    } OnFail:^(XZHMessage *message, NSError *error) {
+                                  } OnFail:^(XZHMessage *message, NSError *error) {
         
-    }];
+                                  }];
     
     [self dismissViewControllerAnimated:YES completion:^(){
         
@@ -158,7 +162,10 @@ static NSString *const cellId = @"cellid";
     XZHMessage *message = [[XZHMessage alloc] init];
     message.title = @"纯文本消息分享到微信朋友圈";
 
-    [[XZHShareManager manager] shareMessage:message Platform:XZHShareWeixin Type:XZHShareToWeixinFriends OnSuccess:^(XZHMessage *message) {
+    [[XZHShareManager manager] shareMessage:message
+                                   Platform:XZHShareWeixin
+                                       Type:XZHShareToWeixinFriends
+                                  OnSuccess:^(XZHMessage *message) {
         
     } OnFail:^(XZHMessage *message, NSError *error) {
         

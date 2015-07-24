@@ -143,7 +143,7 @@ typedef NS_ENUM(NSInteger, XZHTencentPlatform) {
                              @"file_data":msg.imageData,
                              @"previewimagedata":msg.thumbImageData?:msg.imageData
                              };
-        
+        //将图像保存到剪贴板
         [[XZHShareManager manager] clipBoardSave:data
                                           ForKey:SaveObjectForQQPlatformKey
                                         Encoding:XZHClipBoardNSKeyedArchiver];
@@ -161,6 +161,7 @@ typedef NS_ENUM(NSInteger, XZHTencentPlatform) {
         
         NSDictionary *data=@{@"previewimagedata":msg.imageData};
         
+        //将图像保存到剪贴板
         [[XZHShareManager manager] clipBoardSave:data
                                           ForKey:SaveObjectForQQPlatformKey
                                         Encoding:XZHClipBoardNSKeyedArchiver];
@@ -192,12 +193,6 @@ typedef NS_ENUM(NSInteger, XZHTencentPlatform) {
     return url;
 }
 
-- (NSString *)convertHexAppId {
-    int a = 1103289287 ;
-    NSString *str = [ [NSString alloc] initWithFormat:@"%X",a];
-    return str;
-}
-
 - (XZHMessageType)computeMessageType:(XZHMessage *)message {
     
     if (message.title && (!message.link && !message.imageData)) {//分享纯文本消息
@@ -213,6 +208,15 @@ typedef NS_ENUM(NSInteger, XZHTencentPlatform) {
     
     return XZHMessageUndefined;
 }
+
+#pragma mark - Tool 
+
+- (NSString *)convertHexAppId {
+    int a = 1103289287 ;
+    NSString *str = [ [NSString alloc] initWithFormat:@"%X",a];
+    return str;
+}
+
 
 @end
 

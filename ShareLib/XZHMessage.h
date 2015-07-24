@@ -22,18 +22,20 @@ typedef NS_ENUM(NSInteger, XZHMessageType) {
 
 @interface XZHMessage : NSObject
 
+@property (nonatomic, assign) XZHMessageType messageType;//消息类型
+
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *desc;
 @property (nonatomic, copy) NSString *link;
 @property (nonatomic, strong) NSData *imageData;
 @property (nonatomic, strong) NSData *thumbImageData;//缩略图像
-@property (nonatomic, assign) XZHMessageType messageType;
 
-//for 微信
+//专用于微信分享的扩展字段
 @property NSString* extInfo;
 @property NSString* mediaDataUrl;
 @property NSString* fileExt;
 
+//Log属性-值
 - (NSDictionary *)debug;
 
 @end
